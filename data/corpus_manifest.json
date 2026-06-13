@@ -1,0 +1,787 @@
+{
+  "corpus_version": "79dea7c7938d",
+  "generated_at": "2026-06-13T13:28:29+05:30",
+  "doc_count": 128,
+  "total_bytes": 2371125,
+  "docs": [
+    {
+      "tool": "apropos",
+      "filename": "man_apropos.txt",
+      "bytes": 8289,
+      "sha256": "480951be1a09ee86c6cf82efafdbdf8fa390bea1db22fa0aa0f2dafe34411974"
+    },
+    {
+      "tool": "ar",
+      "filename": "man_ar.txt",
+      "bytes": 8996,
+      "sha256": "b3fab1cc7c50cb512ab2ae6d8eb6ef7856ada22a031250c55fd46129f0e4507e"
+    },
+    {
+      "tool": "arp",
+      "filename": "man_arp.txt",
+      "bytes": 4385,
+      "sha256": "7e95f052f88b4a03785d9893bac755fc7dbb484e3a729765b8ceb1e2a9f6b76d"
+    },
+    {
+      "tool": "awk",
+      "filename": "man_awk.txt",
+      "bytes": 11946,
+      "sha256": "fc4fbbb53222d4ea091b812d7f8130b816d6e394b35c7d3454bfdcbf6e31d315"
+    },
+    {
+      "tool": "basename",
+      "filename": "man_basename.txt",
+      "bytes": 1676,
+      "sha256": "93d6a260058c4ae1bcdbad61a3bc27ef57e63046d9c676189ac51be9b500b19e"
+    },
+    {
+      "tool": "bunzip2",
+      "filename": "man_bunzip2.txt",
+      "bytes": 18157,
+      "sha256": "12683440dc7334d2ceccd54785f382d5ddd7c678def4d7dc7d9bfa09418b28fc"
+    },
+    {
+      "tool": "bzip2",
+      "filename": "man_bzip2.txt",
+      "bytes": 18157,
+      "sha256": "12683440dc7334d2ceccd54785f382d5ddd7c678def4d7dc7d9bfa09418b28fc"
+    },
+    {
+      "tool": "cal",
+      "filename": "man_cal.txt",
+      "bytes": 4625,
+      "sha256": "dc43526976c9c1cd3e17332d985972fcc77de7a35133dfd58f487434a526e302"
+    },
+    {
+      "tool": "cat",
+      "filename": "man_cat.txt",
+      "bytes": 3738,
+      "sha256": "b21c47119e2042860d4280be3ef46741127e3d384c35c1a477a8c81b944aa189"
+    },
+    {
+      "tool": "chgrp",
+      "filename": "man_chgrp.txt",
+      "bytes": 3059,
+      "sha256": "98da54611f217f887ab764c1f516c00907bf97901f5e1b04fa1fb404a7c34005"
+    },
+    {
+      "tool": "chmod",
+      "filename": "man_chmod.txt",
+      "bytes": 17806,
+      "sha256": "42e7e06686d1815d459b21bf001a14e1e24b2c4c25ab5334f5fdc4da61483f27"
+    },
+    {
+      "tool": "chown",
+      "filename": "man_chown.txt",
+      "bytes": 4019,
+      "sha256": "3fb1c815b49be747b03e6322e0404ecd208937ae58c93b4a231256d05fa3d2d0"
+    },
+    {
+      "tool": "clang",
+      "filename": "man_clang.txt",
+      "bytes": 27281,
+      "sha256": "37d4b150efe077b691e5729dfa239c9a13996329371893370ca6c1cb79870119"
+    },
+    {
+      "tool": "cmp",
+      "filename": "man_cmp.txt",
+      "bytes": 2976,
+      "sha256": "3737239265203bd046949bd5cd7dd9b8ce97a50ae1dc2f4f6a805999310246c9"
+    },
+    {
+      "tool": "col",
+      "filename": "man_col.txt",
+      "bytes": 3576,
+      "sha256": "157ed18dc773cc4b897ad97b891392299bb5ea451fa1d50250bfd98c0f98e57b"
+    },
+    {
+      "tool": "comm",
+      "filename": "man_comm.txt",
+      "bytes": 2267,
+      "sha256": "9a67d52a1d26be7c964eecd5b15b17e496852decac57083b63907d0abc4d1068"
+    },
+    {
+      "tool": "compress",
+      "filename": "man_compress.txt",
+      "bytes": 7027,
+      "sha256": "9a364be00691c5c12f7f5f02751b4107fcb2f228ac97872023e511500fb34ebe"
+    },
+    {
+      "tool": "cp",
+      "filename": "man_cp.txt",
+      "bytes": 8675,
+      "sha256": "d2f6e7be0652d91329814cd197e5cbc07fb9107e59b2b252235e3ddc222e9c92"
+    },
+    {
+      "tool": "cpio",
+      "filename": "man_cpio.txt",
+      "bytes": 12527,
+      "sha256": "743c2c8be9abc55c4dd57029e88a16d19b367210b266630da3dab1df91427375"
+    },
+    {
+      "tool": "curl",
+      "filename": "man_curl.txt",
+      "bytes": 273499,
+      "sha256": "280a603a701785a6302e65e378b558a54722786ef87bb116854ac5897c6316a3"
+    },
+    {
+      "tool": "cut",
+      "filename": "man_cut.txt",
+      "bytes": 3405,
+      "sha256": "3ed9d0fd91499cb0388e6fdacf8dcf410afff1dfa87155d8e0e66f3f4bab45ac"
+    },
+    {
+      "tool": "date",
+      "filename": "man_date.txt",
+      "bytes": 14520,
+      "sha256": "57d489c7ce47e26f13c230d24de2d624ab70845c21ce5ac5ff442a36909386f3"
+    },
+    {
+      "tool": "dd",
+      "filename": "man_dd.txt",
+      "bytes": 14022,
+      "sha256": "2b267052178c723db62e517e714aa0911e6e71cb7e2552fbdc0060e60c7390c7"
+    },
+    {
+      "tool": "df",
+      "filename": "man_df.txt",
+      "bytes": 9698,
+      "sha256": "904917d7600cabd39e8b9b5859344176e60ae2bb62de125177816f2d8895b136"
+    },
+    {
+      "tool": "diff",
+      "filename": "man_diff.txt",
+      "bytes": 20320,
+      "sha256": "4fa2b350b54deaba0338f3438683efd5dd8316444f21524470f36732f7599f52"
+    },
+    {
+      "tool": "dig",
+      "filename": "man_dig.txt",
+      "bytes": 23542,
+      "sha256": "5033f0600d4cab090a37ae2620c12ee16dbcb8faa37cfca1fed522df300c70e0"
+    },
+    {
+      "tool": "dirname",
+      "filename": "man_dirname.txt",
+      "bytes": 1676,
+      "sha256": "93d6a260058c4ae1bcdbad61a3bc27ef57e63046d9c676189ac51be9b500b19e"
+    },
+    {
+      "tool": "diskutil",
+      "filename": "man_diskutil.txt",
+      "bytes": 129396,
+      "sha256": "44d4810c2f3ec62709b69c881a550f482b38750fb88e82826eca50effec3770d"
+    },
+    {
+      "tool": "du",
+      "filename": "man_du.txt",
+      "bytes": 6081,
+      "sha256": "1b297b91ec493afa75b0cabc4abe23d20d0fbb855a40a57dba8ae7118dd17a7a"
+    },
+    {
+      "tool": "egrep",
+      "filename": "man_egrep.txt",
+      "bytes": 15324,
+      "sha256": "f0388709c5837373d83ecefc10f904f459b7faccfb0e8622cd3910bf86f05ba7"
+    },
+    {
+      "tool": "env",
+      "filename": "man_env.txt",
+      "bytes": 11277,
+      "sha256": "cccb6cb64f5e74ff48f31617020ee8f77d594c0c2b30a9ca2b0e236979bf636e"
+    },
+    {
+      "tool": "expand",
+      "filename": "man_expand.txt",
+      "bytes": 1911,
+      "sha256": "befb5624acd242b11cd0fe17cc70e3a4e8eba889ccf72163f02a328fbf8b3ac4"
+    },
+    {
+      "tool": "fd",
+      "filename": "man_fd.txt",
+      "bytes": 1073,
+      "sha256": "cc2f4fe0176f5208948c61f15c7a603fc457f9eb093f84c1e206d25e4d837b0e"
+    },
+    {
+      "tool": "fgrep",
+      "filename": "man_fgrep.txt",
+      "bytes": 15324,
+      "sha256": "f0388709c5837373d83ecefc10f904f459b7faccfb0e8622cd3910bf86f05ba7"
+    },
+    {
+      "tool": "file",
+      "filename": "man_file.txt",
+      "bytes": 22173,
+      "sha256": "02c213a0364da2f3eca8db408347c00890d73f0ffe406b49c1741dae563878e8"
+    },
+    {
+      "tool": "find",
+      "filename": "man_find.txt",
+      "bytes": 29312,
+      "sha256": "9326bc5db76e1d3233feb7d81e06c59ba3254eaedf6df50fe67d6c119cf0f7aa"
+    },
+    {
+      "tool": "fmt",
+      "filename": "man_fmt.txt",
+      "bytes": 4147,
+      "sha256": "378c7ff26143585ce7d815dd2b66b729d801555ac5af8a4787f6fc24d33a878c"
+    },
+    {
+      "tool": "fold",
+      "filename": "man_fold.txt",
+      "bytes": 2139,
+      "sha256": "d944460186f641a09eaeb690dfa9a62797f58b58627ee8fa4ea7b6c0454b31e8"
+    },
+    {
+      "tool": "ftp",
+      "filename": "man_ftp.txt",
+      "bytes": 20024,
+      "sha256": "d936f24804486b5ca5e80831c2eae5afc242a5a90e6a21baa2a0e49b75519e1e"
+    },
+    {
+      "tool": "git",
+      "filename": "man_git.txt",
+      "bytes": 65348,
+      "sha256": "bcf5a83f5fb6097c963b38bd7aeeaa65f3fbf70001aa6bcf06d62eeeb280c8f8"
+    },
+    {
+      "tool": "grep",
+      "filename": "man_grep.txt",
+      "bytes": 15324,
+      "sha256": "f0388709c5837373d83ecefc10f904f459b7faccfb0e8622cd3910bf86f05ba7"
+    },
+    {
+      "tool": "gunzip",
+      "filename": "man_gunzip.txt",
+      "bytes": 5408,
+      "sha256": "ed619c0f06a596d9aabc1178c78b08b947ea9bed62952f7caaa391176711f83c"
+    },
+    {
+      "tool": "gzip",
+      "filename": "man_gzip.txt",
+      "bytes": 5408,
+      "sha256": "ed619c0f06a596d9aabc1178c78b08b947ea9bed62952f7caaa391176711f83c"
+    },
+    {
+      "tool": "head",
+      "filename": "man_head.txt",
+      "bytes": 1291,
+      "sha256": "3ce69068683e0e2cfc534ca5b700c9a73782a71e50fccd43a2ccf6db463c91a0"
+    },
+    {
+      "tool": "host",
+      "filename": "man_host.txt",
+      "bytes": 6558,
+      "sha256": "14846cc581a9ceca72cc4b480d18d83c7dac6357c53d8f77fe97692f7fc133e5"
+    },
+    {
+      "tool": "hostname",
+      "filename": "man_hostname.txt",
+      "bytes": 1185,
+      "sha256": "82168f5e46d8c1588f3320ba1e0f3741c0aaf8f63ae4b25cc615dedf02771caa"
+    },
+    {
+      "tool": "id",
+      "filename": "man_id.txt",
+      "bytes": 3644,
+      "sha256": "59b6fc9a544a6644d1e4afffb51d36b4d076462f7db01947c428ce797cd8f618"
+    },
+    {
+      "tool": "ifconfig",
+      "filename": "man_ifconfig.txt",
+      "bytes": 32309,
+      "sha256": "9023396f0194816943b536844cb5369d6af97c7a51b5453353c7acf040c19e4f"
+    },
+    {
+      "tool": "join",
+      "filename": "man_join.txt",
+      "bytes": 6573,
+      "sha256": "64f52ea02204c1570585c43e2000520d2221d1c6fdbbb9148827e730673f92e2"
+    },
+    {
+      "tool": "jq",
+      "filename": "man_jq.txt",
+      "bytes": 124224,
+      "sha256": "ac86d93e93c37316ef3b59121518791996bb36a2ab1e073ea02d923388279c25"
+    },
+    {
+      "tool": "kill",
+      "filename": "man_kill.txt",
+      "bytes": 2432,
+      "sha256": "522a25005f6e443001408b38d5471b5be0f8733bd2e13dd36388706937cb150b"
+    },
+    {
+      "tool": "killall",
+      "filename": "man_killall.txt",
+      "bytes": 4716,
+      "sha256": "7f0d5d0ff1962a4badf669fd0dd32f0cf7926ac0682d9123e3a5cffc1a79bead"
+    },
+    {
+      "tool": "ld",
+      "filename": "man_ld.txt",
+      "bytes": 72812,
+      "sha256": "07885f4ad998aed005ce848d5a0bda5bc15d71fd9763e4ed55337a43ed8df081"
+    },
+    {
+      "tool": "less",
+      "filename": "man_less.txt",
+      "bytes": 116486,
+      "sha256": "f485fd70b31bfcef199b7ff2efdc11b1370aa113ac929001777855aa41825804"
+    },
+    {
+      "tool": "ln",
+      "filename": "man_ln.txt",
+      "bytes": 5992,
+      "sha256": "7b5883eacadad88bcc2c13145d91bd8fa36ff30293b548c7995dc0d294bd740d"
+    },
+    {
+      "tool": "locate",
+      "filename": "man_locate.txt",
+      "bytes": 5613,
+      "sha256": "dbb650f91ca02e3a5b52d67f0d68d570afe743585770caa771a8fe68a35f27f2"
+    },
+    {
+      "tool": "ls",
+      "filename": "man_ls.txt",
+      "bytes": 25793,
+      "sha256": "3c0869f101cb616b8ab4a5543f1ef6e39898de4619bc92b492d9e2ba90d5dd75"
+    },
+    {
+      "tool": "make",
+      "filename": "man_make.txt",
+      "bytes": 10831,
+      "sha256": "116bb69f16a1b3eb1eb6159ac5f6bb643b25c30a1678e8d86644b5f7cc2ad80f"
+    },
+    {
+      "tool": "man",
+      "filename": "man_man.txt",
+      "bytes": 8289,
+      "sha256": "480951be1a09ee86c6cf82efafdbdf8fa390bea1db22fa0aa0f2dafe34411974"
+    },
+    {
+      "tool": "mkdir",
+      "filename": "man_mkdir.txt",
+      "bytes": 2345,
+      "sha256": "a0cb1f4a96e38d701aff2a769c3b11423cf939a592e5e1542eb602a49b6f6dab"
+    },
+    {
+      "tool": "mktemp",
+      "filename": "man_mktemp.txt",
+      "bytes": 4927,
+      "sha256": "251dc3007bdda2c819e491e3703e924678d5ad936ca650da5071587ec011576a"
+    },
+    {
+      "tool": "more",
+      "filename": "man_more.txt",
+      "bytes": 116486,
+      "sha256": "f485fd70b31bfcef199b7ff2efdc11b1370aa113ac929001777855aa41825804"
+    },
+    {
+      "tool": "mount",
+      "filename": "man_mount.txt",
+      "bytes": 9096,
+      "sha256": "c8848129bdf56f260e5806fb0fced06a0c06783eb1db489eba3f46d9db7b4c7e"
+    },
+    {
+      "tool": "mv",
+      "filename": "man_mv.txt",
+      "bytes": 3386,
+      "sha256": "917cf31549f9efaed0ed18b98d51ca24c7426ac5e1de00cd8a5e4615e073f7e0"
+    },
+    {
+      "tool": "nc",
+      "filename": "man_nc.txt",
+      "bytes": 11536,
+      "sha256": "673afa27e17df73f4ce3cef9db254e8ecf39a1e7cfea15bdb3bb5df69f801b22"
+    },
+    {
+      "tool": "netstat",
+      "filename": "man_netstat.txt",
+      "bytes": 14601,
+      "sha256": "785fdea8283b3da2e2cc90ea623087f44c9a5171d9fd6cbe7fbef487b99eb30b"
+    },
+    {
+      "tool": "nice",
+      "filename": "man_nice.txt",
+      "bytes": 1823,
+      "sha256": "88005c2694a835322dd7a2dd1dd0f1910d8a52a61b94f3d9d526bb2daf5be740"
+    },
+    {
+      "tool": "nl",
+      "filename": "man_nl.txt",
+      "bytes": 5963,
+      "sha256": "e035e9271014d9cc0629e1ce861b2f10ac3f559196aa28fb50e63b2fd417201d"
+    },
+    {
+      "tool": "nm",
+      "filename": "man_nm.txt",
+      "bytes": 6611,
+      "sha256": "391073ba8b7c39e5a596983b196190d547023afcca21617e95bbab11df28de45"
+    },
+    {
+      "tool": "nohup",
+      "filename": "man_nohup.txt",
+      "bytes": 1645,
+      "sha256": "2e3979a2623c04b3fe9bf73b7024a6e4d7a14336a9832acfb80ff6d413a8fc43"
+    },
+    {
+      "tool": "nslookup",
+      "filename": "man_nslookup.txt",
+      "bytes": 6288,
+      "sha256": "53d895eebf422c081a29965a4003c3108fac99e0397e05cc2610681228cd968a"
+    },
+    {
+      "tool": "otool",
+      "filename": "man_otool.txt",
+      "bytes": 8385,
+      "sha256": "f10af4230f367c54cb3f8b6a85495edbf446f8d669ed3c657dbc18c703909347"
+    },
+    {
+      "tool": "paste",
+      "filename": "man_paste.txt",
+      "bytes": 2914,
+      "sha256": "3e785eec56a43f142e3f02e30019b761b149b188bf6bf525b2cab65bbea14fac"
+    },
+    {
+      "tool": "patch",
+      "filename": "man_patch.txt",
+      "bytes": 26358,
+      "sha256": "b4a7ee68bb3fcddc3385ddf1c56ed5d88b1b635867ad3c47dad8840a7c9b5399"
+    },
+    {
+      "tool": "pax",
+      "filename": "man_pax.txt",
+      "bytes": 33995,
+      "sha256": "2f2041272ce87d4cf11c6c23596bec843be0fba856b646ef6802e04c5fb418e8"
+    },
+    {
+      "tool": "pgrep",
+      "filename": "man_pgrep.txt",
+      "bytes": 6637,
+      "sha256": "b857ec8923cd4bf5e5729be7192b5b57d410ea283d5a807330ec8eaf3f7d0bbd"
+    },
+    {
+      "tool": "ping",
+      "filename": "man_ping.txt",
+      "bytes": 15547,
+      "sha256": "f3d641d2b5f6c102552c3d60935bdbe53dec543fda0024925c85be95c3ef28bb"
+    },
+    {
+      "tool": "pkill",
+      "filename": "man_pkill.txt",
+      "bytes": 6637,
+      "sha256": "b857ec8923cd4bf5e5729be7192b5b57d410ea283d5a807330ec8eaf3f7d0bbd"
+    },
+    {
+      "tool": "ps",
+      "filename": "man_ps.txt",
+      "bytes": 19278,
+      "sha256": "3d9a2fa866555f65293b45800d9ddfa2a66e674fc8f644f94637fd063240d8f3"
+    },
+    {
+      "tool": "readlink",
+      "filename": "man_readlink.txt",
+      "bytes": 12812,
+      "sha256": "70686f1cde7e38110a621c3f61644262257c1aa1f542541310df4086a79fb0f8"
+    },
+    {
+      "tool": "realpath",
+      "filename": "man_realpath.txt",
+      "bytes": 912,
+      "sha256": "710a37711f0dc5016f5fa17dcef78804f8e4d2bce1dc7688e4d3199c6071f57d"
+    },
+    {
+      "tool": "renice",
+      "filename": "man_renice.txt",
+      "bytes": 2444,
+      "sha256": "dab2ea73ce9966baa2b83e83bc8a2decbc180934e7e9351c021259020f5bc7ef"
+    },
+    {
+      "tool": "rev",
+      "filename": "man_rev.txt",
+      "bytes": 587,
+      "sha256": "a216eee32373a662089ebfa5e0e2402af9dc52eec41438415edb314fb82374d0"
+    },
+    {
+      "tool": "rm",
+      "filename": "man_rm.txt",
+      "bytes": 4990,
+      "sha256": "a263e777f321f2f9795b0ea6b826c3eda8a57786412c4cfc21b0a4e7b1a71e57"
+    },
+    {
+      "tool": "rmdir",
+      "filename": "man_rmdir.txt",
+      "bytes": 1660,
+      "sha256": "f09498d1b6819b7b64b8253a91cc0bcee557576fc981d84a8e35e5be2c00190d"
+    },
+    {
+      "tool": "route",
+      "filename": "man_route.txt",
+      "bytes": 10546,
+      "sha256": "65088fc941cb984db78bf96de8a58250d1ec8bf2ad6fa1d9aa6981152cdcfde1"
+    },
+    {
+      "tool": "rsync",
+      "filename": "man_rsync.txt",
+      "bytes": 40998,
+      "sha256": "e67ec24c7516f17d003267566bf8deefa69331be2f5b7afe2a62edb17c236fe0"
+    },
+    {
+      "tool": "scp",
+      "filename": "man_scp.txt",
+      "bytes": 11017,
+      "sha256": "c45a47f03beff0e0bb7c945601cfd53fdc2f8323d9a3d84786cce876359c8828"
+    },
+    {
+      "tool": "sdiff",
+      "filename": "man_sdiff.txt",
+      "bytes": 3771,
+      "sha256": "ae661ae34a3a8e03a7548494cb14414d3cfbbc74f5175b442fe94e7c292cc366"
+    },
+    {
+      "tool": "sed",
+      "filename": "man_sed.txt",
+      "bytes": 18858,
+      "sha256": "c805678fc5b7b74f9ba59023e66325e39d422ea25b93f8b94d04c81ce2b93a2c"
+    },
+    {
+      "tool": "sftp",
+      "filename": "man_sftp.txt",
+      "bytes": 19543,
+      "sha256": "1d08e6ca778f4c2050400ec78a8310838955f099c24dfeeccc7f52bf10aa32d0"
+    },
+    {
+      "tool": "sleep",
+      "filename": "man_sleep.txt",
+      "bytes": 2645,
+      "sha256": "d0b1aabf847fa36c23541d05602942f93f2cfa4acc8db95333e5c8d4629972d5"
+    },
+    {
+      "tool": "sort",
+      "filename": "man_sort.txt",
+      "bytes": 17655,
+      "sha256": "ff75416ec73576bc28cdbbbd06bcd12f78ba61825186b94547855568deec5809"
+    },
+    {
+      "tool": "ssh",
+      "filename": "man_ssh.txt",
+      "bytes": 51236,
+      "sha256": "3ff53e1c8aa2f8862f3c4912d968b3e9cde6706d2e2ad8016a4a47386f3294f9"
+    },
+    {
+      "tool": "ssh-add",
+      "filename": "man_ssh-add.txt",
+      "bytes": 11715,
+      "sha256": "6db2cf35a7767befd6ef92baad4b571b794247299b2c6d79e8ab892b5f5adf08"
+    },
+    {
+      "tool": "ssh-agent",
+      "filename": "man_ssh-agent.txt",
+      "bytes": 8689,
+      "sha256": "9bcdab4231dadb9e46d37ee4416a95d0bb2117092109f4ba58f08b299dec335f"
+    },
+    {
+      "tool": "ssh-copy-id",
+      "filename": "man_ssh-copy-id.txt",
+      "bytes": 6549,
+      "sha256": "6e3f8d37708301987b82bcd8e0dc832d829546da3344bd5f2df81ba3114fb9a6"
+    },
+    {
+      "tool": "ssh-keygen",
+      "filename": "man_ssh-keygen.txt",
+      "bytes": 44342,
+      "sha256": "34e737462890192d8a0baa93b4821f148f05616374a374ece2ff52d5680b3ef4"
+    },
+    {
+      "tool": "stat",
+      "filename": "man_stat.txt",
+      "bytes": 12812,
+      "sha256": "70686f1cde7e38110a621c3f61644262257c1aa1f542541310df4086a79fb0f8"
+    },
+    {
+      "tool": "strip",
+      "filename": "man_strip.txt",
+      "bytes": 10362,
+      "sha256": "e5b96fbe3e3a3cb9b01d0aedcd3a78a05cd6fb57cd8eac03434c7df8927786d5"
+    },
+    {
+      "tool": "stty",
+      "filename": "man_stty.txt",
+      "bytes": 17196,
+      "sha256": "9c0b8ecb8c22a85ec303bdc562ebf7b73b5547418fcf1ce15eef6917101d4eb4"
+    },
+    {
+      "tool": "su",
+      "filename": "man_su.txt",
+      "bytes": 4260,
+      "sha256": "c6b3b1789f75c4107bc7f5f754aca656a9c5ec5450befc24df192672c90f574d"
+    },
+    {
+      "tool": "sudo",
+      "filename": "man_sudo.txt",
+      "bytes": 42121,
+      "sha256": "8ed4d5fef7638411b4755cc2d301affcbbec73724a4e18a3fd7a3a8564daedc6"
+    },
+    {
+      "tool": "tail",
+      "filename": "man_tail.txt",
+      "bytes": 4359,
+      "sha256": "a18b07112ad00ab73c4f15369a8289fca1b5e6f65fcf3ca6cee5e3da615c58f9"
+    },
+    {
+      "tool": "tar",
+      "filename": "man_tar.txt",
+      "bytes": 45705,
+      "sha256": "11032891f64a750c0cbf7c20d3b534e774f9c7feeeaf0221e084aaf385b44ea4"
+    },
+    {
+      "tool": "tee",
+      "filename": "man_tee.txt",
+      "bytes": 1065,
+      "sha256": "67afd2b47b94f2f32f7d9635b3e543371f79ff5b038e27d575522522c01b1270"
+    },
+    {
+      "tool": "time",
+      "filename": "man_time.txt",
+      "bytes": 4024,
+      "sha256": "a639b19ef6b43e0758f66259efb62c719f8bfae483dc1978e64f6ee828bdd97a"
+    },
+    {
+      "tool": "top",
+      "filename": "man_top.txt",
+      "bytes": 13143,
+      "sha256": "afd27a137d988538c6d588bf7b772a8a39026ebf4524b545100cb5559a31372e"
+    },
+    {
+      "tool": "touch",
+      "filename": "man_touch.txt",
+      "bytes": 5935,
+      "sha256": "64177c99ec36f410f6608d6dece821a6c462d942465ee0774ed8bb71c84df778"
+    },
+    {
+      "tool": "tput",
+      "filename": "man_tput.txt",
+      "bytes": 11397,
+      "sha256": "c5865ac309a5f6dd555b16f8d9c8d6eb9f5b724a1aff3fec810b340352fe9a1d"
+    },
+    {
+      "tool": "tr",
+      "filename": "man_tr.txt",
+      "bytes": 9629,
+      "sha256": "9be40aa19d226cc295e7efa6891a5d73d9612786c7610eb454ce9ee3e93019e7"
+    },
+    {
+      "tool": "traceroute",
+      "filename": "man_traceroute.txt",
+      "bytes": 14874,
+      "sha256": "7936ab4a2d503f48c853ac0b8e106975db7d70b3ef3f34b64b91ffefe8728d76"
+    },
+    {
+      "tool": "umask",
+      "filename": "man_umask.txt",
+      "bytes": 9737,
+      "sha256": "cd131b00699e45cccc3db27d8413621452bff2dc6ac7e92fbdb9b3c542c897e9"
+    },
+    {
+      "tool": "umount",
+      "filename": "man_umount.txt",
+      "bytes": 2430,
+      "sha256": "4d5581530101a33aadf79c2ab459b74cbaf10172daa2711fe9b1b98636cb6381"
+    },
+    {
+      "tool": "uname",
+      "filename": "man_uname.txt",
+      "bytes": 2883,
+      "sha256": "8a7671eac9ecec015b75d9df89a5aee68c31c8eeb74d6eb56eb8441e46871062"
+    },
+    {
+      "tool": "unexpand",
+      "filename": "man_unexpand.txt",
+      "bytes": 1911,
+      "sha256": "befb5624acd242b11cd0fe17cc70e3a4e8eba889ccf72163f02a328fbf8b3ac4"
+    },
+    {
+      "tool": "uniq",
+      "filename": "man_uniq.txt",
+      "bytes": 4194,
+      "sha256": "e0e87071d89a9d39c55c3e2adec01d3cc55c94ea79208a4b6eaf7a870c27e18b"
+    },
+    {
+      "tool": "unzip",
+      "filename": "man_unzip.txt",
+      "bytes": 53304,
+      "sha256": "aeb15801f92b170ecd22f931c50359a8db29bc7361485fc0591f092d6132879b"
+    },
+    {
+      "tool": "uptime",
+      "filename": "man_uptime.txt",
+      "bytes": 913,
+      "sha256": "a6a542611d653018a32373b437e308644313c1e6dc812f56fcfeff8861ad58ae"
+    },
+    {
+      "tool": "wc",
+      "filename": "man_wc.txt",
+      "bytes": 4258,
+      "sha256": "ef8b407ce6cd6f6ffb5f268807fc3420bd65a4fb1619b65d0f867216bf30c966"
+    },
+    {
+      "tool": "whatis",
+      "filename": "man_whatis.txt",
+      "bytes": 8289,
+      "sha256": "480951be1a09ee86c6cf82efafdbdf8fa390bea1db22fa0aa0f2dafe34411974"
+    },
+    {
+      "tool": "which",
+      "filename": "man_which.txt",
+      "bytes": 1940,
+      "sha256": "e129eef6611cc37c33c2e0b50c6611672472368594ff4c0fc21db8a888f34757"
+    },
+    {
+      "tool": "who",
+      "filename": "man_who.txt",
+      "bytes": 4090,
+      "sha256": "4754fd1288ca92050ff3b62c587a772eeb2d8f5c92e75fa92ef9066d59565f7f"
+    },
+    {
+      "tool": "whoami",
+      "filename": "man_whoami.txt",
+      "bytes": 595,
+      "sha256": "8c8dd702d437faa597a02051bb249469f05017dea72e17c8d85eaa522ad58a89"
+    },
+    {
+      "tool": "xargs",
+      "filename": "man_xargs.txt",
+      "bytes": 8880,
+      "sha256": "e99f03e0cd7b7d7ac5d38c9742f02f9236c99998b9ca185fc13bd8ad02762c8d"
+    },
+    {
+      "tool": "xz",
+      "filename": "man_xz.txt",
+      "bytes": 87025,
+      "sha256": "50982a3107361d3cd73bc1f196221c60c785e703a16ddb4384111c13bc099a35"
+    },
+    {
+      "tool": "zcat",
+      "filename": "man_zcat.txt",
+      "bytes": 5408,
+      "sha256": "ed619c0f06a596d9aabc1178c78b08b947ea9bed62952f7caaa391176711f83c"
+    },
+    {
+      "tool": "zip",
+      "filename": "man_zip.txt",
+      "bytes": 94678,
+      "sha256": "49ac568f5384b7ad1e2b8936bb6ba6e297177f7ed0edf0456e97a7942203f9ac"
+    }
+  ],
+  "missing": [
+    "ack",
+    "gcc",
+    "htop",
+    "rg",
+    "tac",
+    "telnet",
+    "tree",
+    "watch",
+    "wget"
+  ]
+}

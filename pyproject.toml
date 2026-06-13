@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clirag"
+version = "0.1.0"
+description = "Offline RAG assistant over Unix man pages — built raw first, migrated to LangChain, eval-driven throughout."
+readme = "README.md"
+requires-python = ">=3.11"
+# Raw-phase stack only. LangChain deps are added at the migration phase (step 4),
+# so the from-scratch build genuinely has no framework to lean on.
+dependencies = [
+    "chromadb==1.5.7",   # local persistent vector store
+    "ollama==0.6.1",     # local embeddings + LLM client
+    "python-dotenv==1.2.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools]
+packages = ["clirag"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+# Lets tests import `clirag` without an editable install when run from repo root.
+pythonpath = ["."]
+testpaths = ["tests"]

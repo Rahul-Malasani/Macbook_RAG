@@ -1,0 +1,168 @@
+# Curated candidate list for the man-page corpus.
+# One tool per line; '#' starts a comment. Edit freely and re-run harvest_manpages.py.
+#
+# Chosen for: (1) common user-facing CLI tools, (2) deliberate CONFUSABLE CLUSTERS
+# so retrieval has to disambiguate -> the ablation study has headroom.
+# Tools not installed on this machine are skipped and recorded in the manifest's
+# "missing" list (honest + reproducible). "# likely missing" = expected on stock macOS.
+
+# --- Text search & processing (confusable: grep family + modern alternatives) ---
+grep
+egrep
+fgrep
+rg            # likely missing (ripgrep)
+ack           # likely missing
+sed
+awk
+cut
+tr
+sort
+uniq
+wc
+head
+tail
+tee
+paste
+join
+comm
+fmt
+fold
+nl
+col
+expand
+unexpand
+rev
+tac           # likely missing (GNU coreutils)
+diff
+cmp
+sdiff
+patch
+jq            # likely missing
+
+# --- Files & directories (confusable: find/locate/fd; cp/mv/ln; du/df) ---
+ls
+cp
+mv
+rm
+ln
+mkdir
+rmdir
+touch
+find
+fd            # likely missing
+locate
+stat
+file
+basename
+dirname
+readlink
+realpath      # likely missing on macOS
+tree          # likely missing
+du
+df
+mktemp
+
+# --- Archives & compression (confusable cluster) ---
+tar
+gzip
+gunzip
+zcat
+bzip2
+bunzip2
+xz
+zip
+unzip
+pax
+cpio
+compress
+
+# --- Transfer & remote (confusable: scp/sftp/rsync; curl/wget; ssh-* family) ---
+curl
+wget          # often missing on macOS
+ssh
+scp
+sftp
+rsync
+ssh-keygen
+ssh-agent
+ssh-add
+ssh-copy-id   # likely missing
+nc
+telnet        # likely missing
+ftp
+
+# --- Processes & system ---
+ps
+top
+htop          # likely missing
+kill
+killall
+pkill
+pgrep
+nice
+renice
+nohup
+time
+uptime
+who
+whoami
+id
+uname
+hostname
+env
+date
+cal
+sleep
+watch         # likely missing
+xargs
+which
+
+# --- Permissions & ownership ---
+chmod
+chown
+chgrp
+umask
+sudo
+su
+
+# --- Networking ---
+ping
+traceroute
+netstat
+dig
+host
+nslookup
+arp
+ifconfig
+route
+
+# --- Disk & devices ---
+mount
+umount
+dd
+diskutil
+
+# --- Pagers & viewing ---
+less
+more
+cat
+
+# --- Version control ---
+git
+
+# --- Build & dev tools ---
+make
+gcc
+clang
+ld
+ar
+nm
+strip
+otool
+
+# --- Docs / help / terminal ---
+man
+apropos
+whatis
+tput
+stty
