@@ -42,7 +42,7 @@ python3 scripts/harvest_manpages.py   # regenerate corpus + manifest from the ca
 ## Layout
 
 ```
-clirag/        the pipeline (config, models, loader, … ; chunker/embed/store/retrieve/generate land next)
+clirag/        config, models, loader ✓, chunker ✓ — embed/store/retrieve/generate next
 evals/         golden set + retrieval/generation eval + experiments table  (step 2)
 scripts/       corpus harvesting
 tests/         unit tests (run in CI)
@@ -53,7 +53,7 @@ app/           FastAPI + dashboard  (step 7)
 ## Roadmap
 
 - [x] **0 — Foundation:** package layout, config, corpus harvest + manifest, CI + tests, docs
-- [ ] **1 — Raw pipeline:** load → chunk (stable IDs, idempotent) → embed → store → retrieve → generate
+- [ ] **1 — Raw pipeline:** load ✓ · chunk ✓ · embed → store → retrieve → generate
 - [ ] **2 — Eval harness:** golden set (stratified + negatives), retrieval + generation metrics → baseline
 - [ ] **3 — Telemetry:** per-query trace store (chunks+scores, per-stage latency, tokens)
 - [ ] **4 — LangChain migration** + parity check + cost-of-framework writeup

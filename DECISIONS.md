@@ -57,6 +57,12 @@ weighed and declined.
 - **Why:** embeddings are compared by direction, not magnitude; cosine is the right metric.
   Chroma defaults to L2 — leaving the default would silently use a metric we didn't intend.
 
+### Embeddings: no task prefixes in the baseline
+- **Decision:** the baseline embeds raw text with no instruction prefix.
+- `nomic-embed-text` is trained with `search_document:` / `search_query:` prefixes that
+  usually lift retrieval. `embed_documents` / `embed_query` are split so adding them is a
+  one-line change — **"add nomic task prefixes" is a measured experiment, not baked in.**
+
 ---
 
 ## Stack decisions  *(migrated)*
@@ -107,13 +113,28 @@ The gap between how users ask and how man pages answer is too wide for plain sim
 
 ---
 
-## Chunking strategy  *(migrated)*
+## Chunking strategy
 
-- **Current:** flat `RecursiveCharacterTextSplitter` (size 500, overlap 50). Simple; blind
-  to structure → splits across section/option boundaries.
+- **Current (baseline):** our own raw recursive character splitter (size 500, overlap 50;
+  separator hierarchy paragraph→line→word→char) with stable content-hash chunk ids for
+  idempotent ingest. No LangChain. Simple; blind to structure → splits across
+  section/option boundaries. (Reused at the LangChain migration so the parity check is clean.)
 - **Planned:** structure-aware (split on man-page sections: NAME/SYNOPSIS/DESCRIPTION/
   OPTIONS/EXAMPLES) then recursive within a section for size control. Must be done at
   chunk time — cannot retrofit existing flat chunks.
+
+---
+
+## Corpus observations (2026-06-13)
+
+### Near-duplicate documents
+`man apropos`, `man whatis`, and `man man` resolve to the same MAN(1) page, so the corpus
+holds a few near-identical documents. A realistic retrieval wrinkle (near-dupes compete
+for one query) — relevant to MMR (experiment 6) and to how retrieval hits are counted.
+
+### Header/footer boilerplate in chunks
+Every page repeats a running header/footer (`MAN(1)  General Commands Manual  MAN(1)`),
+which leaks into chunks as low-value tokens. Candidate cleanup at chunk time — see backlog.
 
 ---
 
@@ -128,6 +149,8 @@ The gap between how users ask and how man pages answer is too wide for plain sim
 7. Reranker (cross-encoder over a wider candidate set)
 8. Relevance threshold tuning ("I don't know" path)
 9. Semantic caching (latency/cost; guard correctness)
+10. Embedding task prefixes (nomic `search_query:` / `search_document:`)
+11. Strip man-page header/footer boilerplate at chunk time
 > Eval harness (golden set + retrieval/generation metrics, RAGAS-style) is **step 2** —
 > built before experiment 1 so every row above has numbers.
 
