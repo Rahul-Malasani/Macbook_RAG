@@ -63,6 +63,11 @@ weighed and declined.
   usually lift retrieval. `embed_documents` / `embed_query` are split so adding them is a
   one-line change — **"add nomic task prefixes" is a measured experiment, not baked in.**
 
+### Generation baseline is minimal (tokens/latency/streaming deferred)
+- **Decision:** the baseline generator returns only the answer string. Token counts,
+  latency, and streaming are added later (telemetry / deploy), *after* the experiments —
+  they don't change retrieval/generation quality, only observability.
+
 ---
 
 ## Stack decisions  *(migrated)*
@@ -135,6 +140,27 @@ for one query) — relevant to MMR (experiment 6) and to how retrieval hits are 
 ### Header/footer boilerplate in chunks
 Every page repeats a running header/footer (`MAN(1)  General Commands Manual  MAN(1)`),
 which leaks into chunks as low-value tokens. Candidate cleanup at chunk time — see backlog.
+
+---
+
+## Baseline end-to-end run (2026-06-13, corpus_version 79dea7c7938d)
+
+First full raw pipeline (load→chunk→embed→store→retrieve→generate), top_k=3, gemma3:4b.
+Grounding works — no hallucination: the negative control and the retrieval misses both
+returned the IDK answer rather than inventing one. The known failure modes reproduced;
+this is the headroom the experiments target:
+
+- **"copy a file?"** → right page (cp), but the SYNOPSIS flag line, not basic usage. (Test 1)
+- **"files modified in the last 7 days?"** → `find` not even in top-k (got ls/readlink/stat)
+  → IDK. Retrieval miss from the semantic gap. (Test 2)
+- **"connect to a remote server?"** → curl ranked #1 over ssh (vocabulary collision, Test 3);
+  ssh was in top-k, so the answer came from ssh (port-forwarding, not basic usage).
+- **"make a file executable?"** → chmod not retrieved at all; rsync's "executability" option
+  dominated → wrong answer. New data point for hybrid / HyDE.
+- **"capital of France?"** → IDK (negative control passes).
+
+Most errors are **retrieval** failures (wrong/missing top-k), not generation — so the eval
+must score retrieval and generation separately (step 2).
 
 ---
 

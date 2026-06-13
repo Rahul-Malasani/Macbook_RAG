@@ -26,6 +26,16 @@ development (Ollama + ChromaDB); deployed with a hosted LLM.
 | LLM         | `gemma3:4b` via Ollama          | swapped to an API at deploy             |
 | Lang        | Python ≥3.11                    | packaged (`pyproject.toml`)             |
 
+## Quickstart
+
+Requires a local [Ollama](https://ollama.com) with `nomic-embed-text` and `gemma3:4b` pulled.
+
+```bash
+pip install -e .                                  # or: venv/bin/pip install -e ".[dev]"
+python -m clirag.ingest                           # load → chunk → embed → store (6,485 chunks)
+python -m clirag.query "how do I copy a file?"    # retrieve → generate (or no arg = interactive)
+```
+
 ## Corpus
 
 A **curated, reproducible** set of common Unix CLI tools (currently **128 man pages**),
@@ -42,7 +52,7 @@ python3 scripts/harvest_manpages.py   # regenerate corpus + manifest from the ca
 ## Layout
 
 ```
-clirag/        config, models, loader ✓, chunker ✓ — embed/store/retrieve/generate next
+clirag/        config · models · loader · chunker · embedder · vectorstore · retriever · generator · ingest · query
 evals/         golden set + retrieval/generation eval + experiments table  (step 2)
 scripts/       corpus harvesting
 tests/         unit tests (run in CI)
@@ -53,7 +63,7 @@ app/           FastAPI + dashboard  (step 7)
 ## Roadmap
 
 - [x] **0 — Foundation:** package layout, config, corpus harvest + manifest, CI + tests, docs
-- [ ] **1 — Raw pipeline:** load ✓ · chunk ✓ · embed → store → retrieve → generate
+- [x] **1 — Raw pipeline:** load → chunk → embed → store → retrieve → generate (end-to-end on 128 pages)
 - [ ] **2 — Eval harness:** golden set (stratified + negatives), retrieval + generation metrics → baseline
 - [ ] **3 — Telemetry:** per-query trace store (chunks+scores, per-stage latency, tokens)
 - [ ] **4 — LangChain migration** + parity check + cost-of-framework writeup
