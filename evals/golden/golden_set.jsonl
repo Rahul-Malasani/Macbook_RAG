@@ -1,0 +1,50 @@
+{"id": "q001", "question": "how do I copy a directory and all of its contents?", "expected_tools": ["cp"], "type": "lookup", "reference": "cp -R src dst"}
+{"id": "q002", "question": "how do I rename a file?", "expected_tools": ["mv"], "type": "lookup", "reference": "mv old new"}
+{"id": "q003", "question": "how do I delete a directory and everything inside it?", "expected_tools": ["rm"], "type": "lookup", "reference": "rm -r dir"}
+{"id": "q004", "question": "how do I create a new empty file?", "expected_tools": ["touch"], "type": "lookup", "reference": "touch file"}
+{"id": "q005", "question": "how do I create nested directories in one command?", "expected_tools": ["mkdir"], "type": "lookup", "reference": "mkdir -p a/b/c"}
+{"id": "q006", "question": "how do I count the number of lines in a file?", "expected_tools": ["wc"], "type": "lookup", "reference": "wc -l file"}
+{"id": "q007", "question": "how do I show the first 20 lines of a file?", "expected_tools": ["head"], "type": "lookup", "reference": "head -n 20 file"}
+{"id": "q008", "question": "how do I show the last 20 lines of a file?", "expected_tools": ["tail"], "type": "lookup", "reference": "tail -n 20 file"}
+{"id": "q009", "question": "how do I search for a word inside files?", "expected_tools": ["grep"], "type": "lookup", "reference": "grep word file"}
+{"id": "q010", "question": "how do I sort the lines of a file alphabetically?", "expected_tools": ["sort"], "type": "lookup", "reference": "sort file"}
+{"id": "q011", "question": "how do I remove duplicate adjacent lines from input?", "expected_tools": ["uniq"], "type": "lookup", "reference": "sort file | uniq"}
+{"id": "q012", "question": "how do I make a file executable?", "expected_tools": ["chmod"], "type": "lookup", "reference": "chmod +x file"}
+{"id": "q013", "question": "how do I change the owner of a file?", "expected_tools": ["chown"], "type": "lookup", "reference": "chown user file"}
+{"id": "q014", "question": "how do I find files modified in the last 7 days?", "expected_tools": ["find"], "type": "lookup", "reference": "find . -mtime -7"}
+{"id": "q015", "question": "how do I show free disk space on mounted filesystems?", "expected_tools": ["df"], "type": "lookup", "reference": "df -h"}
+{"id": "q016", "question": "how do I show the total size of a directory?", "expected_tools": ["du"], "type": "lookup", "reference": "du -sh dir"}
+{"id": "q017", "question": "how do I create a gzip-compressed tar archive of a folder?", "expected_tools": ["tar"], "type": "lookup", "reference": "tar -czf a.tgz dir"}
+{"id": "q018", "question": "how do I extract a zip archive?", "expected_tools": ["unzip"], "type": "lookup", "reference": "unzip file.zip"}
+{"id": "q019", "question": "how do I download a file from a URL?", "expected_tools": ["curl"], "type": "lookup", "reference": "curl -O url"}
+{"id": "q020", "question": "how do I generate an SSH key pair?", "expected_tools": ["ssh-keygen"], "type": "lookup", "reference": "ssh-keygen -t ed25519"}
+{"id": "q021", "question": "how do I list the processes currently running?", "expected_tools": ["ps"], "type": "lookup", "reference": "ps aux"}
+{"id": "q022", "question": "how do I terminate a process by its PID?", "expected_tools": ["kill"], "type": "lookup", "reference": "kill PID"}
+{"id": "q023", "question": "how do I print the current date and time?", "expected_tools": ["date"], "type": "lookup", "reference": "date"}
+{"id": "q024", "question": "how do I concatenate two files and print them to the screen?", "expected_tools": ["cat"], "type": "lookup", "reference": "cat a b"}
+{"id": "q025", "question": "how do I replace text in a stream with a substitution rule?", "expected_tools": ["sed"], "type": "lookup", "reference": "sed 's/a/b/g' file"}
+{"id": "q026", "question": "how do I compare two files line by line?", "expected_tools": ["diff"], "type": "lookup", "reference": "diff a b"}
+{"id": "q027", "question": "how do I check network connectivity to a host?", "expected_tools": ["ping"], "type": "lookup", "reference": "ping host"}
+{"id": "q028", "question": "how do I mount a filesystem?", "expected_tools": ["mount"], "type": "lookup", "reference": "mount /dev/disk /mnt"}
+{"id": "q029", "question": "how do I search the manual pages by keyword?", "expected_tools": ["apropos"], "type": "lookup", "reference": "apropos keyword"}
+{"id": "q030", "question": "how do I find out which binary a command runs?", "expected_tools": ["which"], "type": "lookup", "reference": "which python"}
+{"id": "q031", "question": "how do I copy a file to another machine over the network?", "expected_tools": ["scp", "rsync", "sftp"], "type": "ambiguous", "reference": "scp file user@host:/path"}
+{"id": "q032", "question": "how do I look up the IP address for a domain name?", "expected_tools": ["dig", "host", "nslookup"], "type": "ambiguous", "reference": "dig example.com"}
+{"id": "q033", "question": "how do I kill all processes matching a name?", "expected_tools": ["killall", "pkill"], "type": "ambiguous", "reference": "killall name"}
+{"id": "q034", "question": "how do I view a large file one page at a time?", "expected_tools": ["less", "more"], "type": "ambiguous", "reference": "less file"}
+{"id": "q035", "question": "how do I extract specific columns or fields from each line of text?", "expected_tools": ["cut", "awk"], "type": "ambiguous", "reference": "cut -f1 / awk '{print $1}'"}
+{"id": "q036", "question": "how do I compress a single file?", "expected_tools": ["gzip", "bzip2", "xz", "zip"], "type": "ambiguous", "reference": "gzip file"}
+{"id": "q037", "question": "how do I find files larger than 100MB and delete them?", "expected_tools": ["find"], "type": "multi-hop", "reference": "find . -size +100M -delete"}
+{"id": "q038", "question": "how do I count how many lines in a file match a pattern?", "expected_tools": ["grep"], "type": "multi-hop", "reference": "grep -c pattern file"}
+{"id": "q039", "question": "how do I list files sorted by modification time, newest first?", "expected_tools": ["ls"], "type": "multi-hop", "reference": "ls -lt"}
+{"id": "q040", "question": "how do I find all .log files and remove them?", "expected_tools": ["find"], "type": "multi-hop", "reference": "find . -name '*.log' -delete"}
+{"id": "q041", "question": "how do I archive a directory while excluding the .git folder?", "expected_tools": ["tar"], "type": "multi-hop", "reference": "tar --exclude=.git -czf a.tgz dir"}
+{"id": "q042", "question": "how do I find the process id of a program by its name?", "expected_tools": ["pgrep", "ps"], "type": "multi-hop", "reference": "pgrep name / ps aux | grep name"}
+{"id": "q043", "question": "what is the capital of France?", "expected_tools": [], "type": "negative", "reference": null}
+{"id": "q044", "question": "who won the 2018 football world cup?", "expected_tools": [], "type": "negative", "reference": null}
+{"id": "q045", "question": "what will the weather be tomorrow?", "expected_tools": [], "type": "negative", "reference": null}
+{"id": "q046", "question": "can you recommend a good pizza recipe?", "expected_tools": [], "type": "negative", "reference": null}
+{"id": "q047", "question": "what is the meaning of life?", "expected_tools": [], "type": "negative", "reference": null}
+{"id": "q048", "question": "what is the population of Japan?", "expected_tools": [], "type": "negative", "reference": null}
+{"id": "q049", "question": "translate the word hello into Spanish", "expected_tools": [], "type": "negative", "reference": null}
+{"id": "q050", "question": "which stock should I buy this week?", "expected_tools": [], "type": "negative", "reference": null}

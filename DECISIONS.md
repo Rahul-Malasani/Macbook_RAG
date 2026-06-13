@@ -164,6 +164,27 @@ must score retrieval and generation separately (step 2).
 
 ---
 
+## Baseline retrieval metrics (2026-06-13, corpus_version 79dea7c7938d, commit c560212)
+
+Golden set: 50 hand-authored questions (42 answerable + 8 negatives), tool-level labels.
+top_k=3, nomic-embed-text, cosine. First row in `evals/results/experiments.jsonl`.
+
+| metric | value |
+|--------|-------|
+| hit@1  | 0.476 |
+| hit@3  | 0.690 |
+| MRR    | 0.567 |
+
+hit@3 by type: lookup 0.70 · ambiguous 0.67 · multi-hop 0.67. **13/42 answerable misses** —
+natural-language queries vs terse man-page wording (`"rename a file"`→mv missed;
+`"count lines"`→wc missed; `"search for a word"`→grep missed; chmod/find missed). This is the
+headroom the experiments target (hybrid/BM25, HyDE, structure-aware chunking, task prefixes).
+Some labels are strict (e.g. q036 excludes `compress`) — pending golden-set review.
+
+Generation metrics deferred (per scope) — retrieval is where every observed failure lives.
+
+---
+
 ## Experiment backlog (each measured vs. a fixed corpus_version, each with a tradeoff line)
 
 1. Chunk-size / overlap sweep (300 / 500 / 1000)

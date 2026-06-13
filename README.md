@@ -64,7 +64,7 @@ app/           FastAPI + dashboard  (step 7)
 
 - [x] **0 — Foundation:** package layout, config, corpus harvest + manifest, CI + tests, docs
 - [x] **1 — Raw pipeline:** load → chunk → embed → store → retrieve → generate (end-to-end on 128 pages)
-- [ ] **2 — Eval harness:** golden set (stratified + negatives), retrieval + generation metrics → baseline
+- [x] **2 — Eval harness:** 50-question golden set + retrieval metrics (hit@k, MRR) → baseline (hit@3 0.69); generation metrics deferred
 - [ ] **3 — Telemetry:** per-query trace store (chunks+scores, per-stage latency, tokens)
 - [ ] **4 — LangChain migration** + parity check + cost-of-framework writeup
 - [ ] **5 — Experiments:** structure-aware chunking · reranker · hybrid · query-rewrite · MMR · threshold · cache
