@@ -66,7 +66,7 @@ app/           FastAPI + dashboard  (step 7)
 - [x] **1 — Raw pipeline:** load → chunk → embed → store → retrieve → generate (end-to-end on 128 pages)
 - [x] **2 — Eval harness:** 50-question golden set + retrieval metrics (hit@k, MRR) → baseline (hit@3 0.69); generation metrics deferred
 - [ ] **3 — Telemetry:** per-query trace store (chunks+scores, per-stage latency, tokens)
-- [ ] **4 — LangChain migration** + parity check + cost-of-framework writeup
+- [x] **4 — LangChain migration** — behavior-preserving (hit@3 0.690, same miss set); wiring LOC 452→89, deps 2→8
 - [ ] **5 — Experiments:** structure-aware chunking · reranker · hybrid · query-rewrite · MMR · threshold · cache
 - [ ] **6 — Hardening:** timeouts/retries, relevance threshold, graceful degradation, rate limit
 - [ ] **7 — Deploy:** API LLM/embeddings, Docker, FastAPI, live dashboard

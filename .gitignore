@@ -1,5 +1,6 @@
 venv/
 chroma_db/
+chroma_db_lc/
 .env
 .DS_Store
 __pycache__/

@@ -185,6 +185,41 @@ Generation metrics deferred (per scope) — retrieval is where every observed fa
 
 ---
 
+## LangChain migration (step 4 — 2026-06-13)
+
+Rebuilt the pipeline on LangChain (`clirag/lc.py`): `DirectoryLoader` →
+`RecursiveCharacterTextSplitter` (500/50) → `OllamaEmbeddings` → `langchain-chroma`
+(cosine) → retriever (k=3) → LCEL chain (`ChatOllama` gemma3:4b, same prompt). Built into a
+separate collection (`manpages_lc`); the raw index is untouched for side-by-side eval.
+
+**Behavior — preserved** (`--stack langchain` row in `experiments.jsonl`):
+
+| stack | hit@1 | hit@3 | MRR | misses |
+|-------|-------|-------|-----|--------|
+| raw       | 0.476 | 0.690 | 0.567 | 13 |
+| langchain | 0.452 | 0.690 | 0.556 | 13 (identical set) |
+
+hit@3 identical and the **13 missed questions are the same set** → behavior-preserving. The
+hit@1/MRR dip is one question changing rank, from `RecursiveCharacterTextSplitter` producing
+**6,507 chunks vs my reimplementation's 6,485** (`keep_separator` differs). A chunker-impl
+artifact, not a retrieval regression — which is exactly the kind of move the log demanded we explain.
+
+**Cost / benefit (the real deliverable):**
+- **Wiring LOC: 452 → 89 (−80%).** RCTS replaces the ~130-line recursive splitter + merge;
+  `Chroma.from_documents` replaces the idempotent batched upsert; `as_retriever` + LCEL
+  replace the retriever/generator glue.
+- **Dependencies: 2 → 8 direct** (+`langchain`, `-core`, `-community`, `-chroma`, `-ollama`,
+  `-text-splitters`), heavy transitive tree (~116 pkgs in the venv); carries the Pydantic-v1
+  vs Python-3.14 warning.
+- **Control lost:** retriever yields LangChain `Document`s (needed an adapter for the eval);
+  stable chunk IDs, delete-by-source idempotency, and per-stage instrumentation are no longer
+  ours to shape — the trace panel will hook LangChain **callbacks** instead.
+
+**Verdict:** keep LangChain as the base for the experiments (faster to swap retrievers /
+rerankers), with the raw pipeline frozen as the "I understand the internals" reference.
+
+---
+
 ## Experiment backlog (each measured vs. a fixed corpus_version, each with a tradeoff line)
 
 1. Chunk-size / overlap sweep (300 / 500 / 1000)
